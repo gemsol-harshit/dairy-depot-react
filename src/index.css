@@ -1,3 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* @layer base {
+	html {
+		font-family: 'Inter', sans-serif;
+		line-height: 1.3;
+	}
+	table {
+	}
+	th,
+	td {
+		@apply py-3 px-2.5 text-sm text-left border-y border-gray-200;
+	}
+	thead {
+		@apply bg-neutral-100;
+	}
+	th {
+		@apply font-semibold;
+	}
+	a {
+		@apply text-sky-500 hover:underline;
+	}
+} */
+
+/* For Webkit-based browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 8px; /* Adjust width to be thinner than thin */
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255); /* Background color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 93, 164, 0.425); /* Color of the scrollbar thumb */
+  border-radius: 4px; /* Rounded corners of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(
+    0,
+    79,
+    140,
+    0.425
+  ); /* Darker color of the scrollbar thumb on hover */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin; /* Thin scrollbar width */
+  scrollbar-color: rgba(95, 95, 95, 0.425) rgb(255, 255, 255); /* Scrollbar thumb and track colors */
+}
+
+/* Removing scrollbar arrows for Webkit browsers */
+::-webkit-scrollbar-button {
+  display: none; /* Hides the up and down arrows on the scrollbar */
+}
